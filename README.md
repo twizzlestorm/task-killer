@@ -1,4 +1,8 @@
 # task-killer
-self explanatory, type "colorhax" when prompted for a file for a little easter egg
+A batch program that can be used to kill unresponsive programs by simply typing out the executable name.
 
-(C) twizzlestorm 2017-2018
+Features:
+- Tasklist function
+- Secret easter egg
+
+(C) Twizzlestorm 2017-2018
