@@ -1,5 +1,7 @@
 :: (C) Twizzlestorm 2018
+
 @echo off
+
 :welcome
 cls
 echo Welcome to TaskKiller
@@ -12,6 +14,7 @@ echo.
 if %process% == colorhax goto egg1
 if %process% == tasklist goto list
 goto kill
+
 :kill
 cls
 echo Killing process
@@ -20,12 +23,14 @@ echo Process was killed. If an error message has appeared, you may have misspell
 echo Press any key to return to the menu.
 pause >nul
 goto welcome
+
 :list
 cls
 tasklist
 echo Return to the home screen by hitting any key.
 pause >nul
 goto welcome
+
 :egg1
 cls
 echo You've found easter egg 1!
@@ -34,6 +39,7 @@ echo To go back to menu, type "back".
 set /p colorcode=Code:
 if %colorcode% == back goto welcome
 goto setcolor
+
 :setcolor
 color %colorcode%
 goto egg1
